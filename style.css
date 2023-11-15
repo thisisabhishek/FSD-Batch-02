@@ -1,0 +1,48 @@
+.bodydiv {
+    padding: 50px;
+    color: #000;
+    /* border: dotted 5px #ed639e; */
+    /* border-style: groove;
+    border-width: 15px;
+    border-color: #ed639e; */
+    box-sizing: content-box;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 1100px;
+}
+
+@media screen and (min-width: 1100px) {
+    .bodydiv {
+        background-color: #4535aa;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1099px) {
+    .bodydiv {
+        background-color: #ed639e;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .bodydiv {
+        background-color: #ffb643;
+    }
+}
+
+.div2 {
+    background-color: #ed639e;
+    margin-bottom: 10px;
+    padding: 50px;
+}
+
+.span1 {
+    background-color: #ffb643;
+}
+
+.span2 {
+    background-color: #fff;
+    border: solid 2px #000;
+    position: sticky;
+    top: 0px;
+}
+

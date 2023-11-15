@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #e7e4f8;
+            padding: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template: auto auto auto / auto auto auto auto;
+            grid-template-areas:"header header header header"
+                                "side main main main"
+                                "footer footer footer footer";
+        }
+        .cell-h {
+            background-color: #ffb643;
+            padding: 10px;
+            grid-area: header;
+        }
+        .cell-m {
+            background-color: #fff;
+            padding: 10px;
+            grid-area: main;
+        }
+        .cell-s {
+            background-color: #4535aa;
+            padding: 10px;
+            grid-area: side;
+        }
+        .cell-f {
+            background-color: #ed639e;
+            padding: 10px;
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid</h1>
+    <div class="container grid">
+        <div class="cell-h">Header</div>
+        <div class="cell-m">
+            <p>Some article content</p>
+            <p>Some article content</p>
+            <p>Some article content</p>
+            <p>Some article content</p>
+            <p>Some article content</p>
+            <p>Some article content</p>
+            <p>Some article content</p>
+            <p>Some article content</p>
+            <p>Some article content</p>
+        </div>
+        <div class="cell-s">Side</div>
+        <div class="cell-f">Footer</div>
+    </div>
+</body>
+</html>
